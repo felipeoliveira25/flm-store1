@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: #FAFAFA;
+}
+
+header{
+    background-color: #000;
+    width: 100vw;
+    height: 131px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    z-index: 1;
+    
+}
+
+.img-logo{
+    width: 250px;
+    height: 250px;
+    padding-top: 0;
+    padding-right: 0;
+    margin-top: -67px;
+    cursor: pointer;
+}
+
+.itens-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.itens-header > li > a:hover{
+    color: #7e7e7e;
+    transition: all 0.3s ease-out;
+    
+    
+    /* font-size: 16px; */
+    
+}
+
+.itens-header > li > a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Bebas Neue', sans-serif;
+    
+    
+}
+
+.item-pesquisa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 17rem;
+}
+
+.item-pesquisa > input{
+    border-radius: 20px;
+    width: 11.5rem;
+    height: 2.5rem;
+    background: transparent;
+    border-color: #cccccc;
+    outline: 0;
+    color: #fff;
+    padding-left: 10px;
+    
+    
+    
+}
+
+.item-pesquisa > input::placeholder{
+    /* padding-left: 15px; */
+    color: #fff;
+    opacity: 0.5;
+    text-align: left;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.icones-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-left: 1rem;
+    
+}
+
+.icones-header > i{
+    color: #fff;
+}
+
+.icones-header > i:hover{
+    color: #7e7e7e;
+}
+
+.pagina-inicial:focus{
+    color: #7e7e7e;
+}
+
+
+
+.slider > a > img{
+    width: 100vw;
+    z-index: 2;
+    /* margin-top: 100px; */
+    padding-top: 100px;
+    
+    
+   
+    
+}
+
+.titulo-palmeiras h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    color: #1E6804;
+    font-size: 35px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.camisas-palmeiras{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    gap: 5rem;
+}
+
+.card-camisa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px;
+    width: 400px;
+    transition: all 0.3s ease-out;
+    border-left: 3px solid #1E6804;
+    z-index: 0;
+    color: #000;
+}
+
+.card-camisa:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+
+.card-camisa img{
+    height: 10.5rem;
+    width: 10.5rem;
+    display: flex;
+    
+    
+}
+
+.card-camisa p{
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.card-camisa h2{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #106347;
+}
+
+.slider-barca{
+    margin-top: 130px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider-barca h2{
+    color: #400abe;
+    margin-bottom: 30px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 35px;
+}
+
+
+
+.slider-barca > a > img{
+    width: 100vw;
+
+    
+}
+
+.slider-united{
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider-united h2{
+    color: #a10606;
+    margin-bottom: 30px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 35px;
+}
+
+.slider-united > a > img{
+    width: 100vw;
+}
+
+.slider-vitoria{
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider-vitoria h2{
+    color: #000000;
+    margin-bottom: 30px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 35px;
+}
+
+.slider-vitoria > h2 > strong{
+    color: #a10606;
+}
+
+
+.slider-vitoria > a > img{
+    width: 100vw;
+    
+}
+
+.titulo-vitoria h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    color: #a10606;
+    font-size: 35px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.camisas-vitoria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    gap: 5rem;
+}
+
+.card-camisa-vitoria{
+    display: flex;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px;
+    width: 400px;
+    transition: all 0.3s ease-out;
+    border-left: 3px solid #a10606;
+    z-index: 0;
+}
+
+.card-camisa-vitoria:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+
+.card-camisa-vitoria img{
+    height: 10.5rem;
+    width: 10.5rem;
+    display: flex;
+    
+    
+}
+
+.card-camisa-vitoria p{
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.card-camisa-vitoria h2{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #a10606;
+}
+
+footer{
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    width: 100vw;
+    margin-top: 140px;
+    
+}
+
+footer img{
+    width: 230px;
+    height: 230px;
+   
+}
+
+.inicio{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 15px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+footer li, a, h2, div{
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+    font-family: 'Bebas Neue', sans-serif;
+    cursor: pointer;
+    
+}
+
+footer li > a:hover{
+    color: #7e7e7e;
+}
+
+.sobre-nos{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.suporte{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.botoes-contato{
+    margin-right: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.redes-sociais{
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+    
+}
+
+.redes-sociais i:hover{
+    color: #7e7e7e;
+}
+
+.botao-contato button{
+    border-radius: 20px;
+    width: 108px;
+    height: 27px;
+    border: none;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.botao-contato button:hover{
+    background-color: #7e7e7e;
+}
+
+.content-seriea{
+    padding-top: 110px;
+}
+
+
+
+.linha-filtro{
+    margin-left: 50px;
+    margin-right: 50px;
+    border-left: none;
+    border-right: none;
+}
+
+.titulo-seriea{
+    display: flex;
+    justify-content: space-between;
+    padding:50px ;    
+}
+
+.titulo-seriea h1{
+    color: #000;
+    margin-left: 20px;
+    
+    
+
+    
+    
+}
+
+
+.itens-filtro{
+    display: flex;
+    color: #000;
+    gap: 30px;
+    justify-content:start;
+    padding: 30px;
+}
+
+.itens-filtro i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.itens-filtro i:hover{
+    color: #106347;
+}
+
+.itens-filtro fieldset{
+    padding: 10px;
+}
+
+.itens-filtro fieldset:hover{
+    background-color: #7e7e7e;
+}
+
+.camisas-serie-a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    gap: 5rem;
+}
+
+.card-camisa-a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px;
+    width: 400px;
+    transition: all 0.3s ease-out;
+    border-left: 3px solid #1E6804;
+    z-index: 0;
+    color: #000;
+}
+
+.card-camisa-a img{
+    height: 10.5rem;
+    width: 10.5rem;
+    display: flex;
+    
+    
+}
+
+.card-camisa-a h2{
+    color: #000;
+}
+
+.camisas-serie-a2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    gap: 5rem;
+}
+
+.camisas-serie-a3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    gap: 5rem;
+}
+
+
+
