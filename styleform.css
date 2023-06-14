@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{box-sizing: border-box;}
+
+html, body{height: 100%;}
+
+body{
+    display: grid;
+    place-items: center;
+    margin: 0;
+    padding: 0 32px;
+    background: #fafafa;
+    font-family: 'Bebas Neue', sans-serif;
+
+}
+
+@media (width >= 500px) {
+    body{
+        padding: 0;
+    }
+}
+
+.background{
+    position: fixed;
+    top: -50vmin;
+    left: -50vmin;
+    width: 100vmin;
+    height: 100vmin;
+    border-radius: 47% 53% 61% 39% / 45% 51% 49% 55%;
+    background: #000;
+}
+
+.logo{
+    width: 250px;
+    height: 250px;
+}
+
+.background ::after {
+    content: "";
+    position: inherit;
+    right: -50vmin;
+    bottom: -55vmin;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background: #143d81;
+}
+
+.card {
+    overflow: hidden;
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    margin: 0 20px;
+    padding: 170px 30px 54px;
+    border-radius: 1.25rem;
+    background: #fff;
+    opacity: 0.9;
+    text-align: center;
+    box-shadow: 0 100px 100px rgb(0 0 0 / 10%);
+}
+
+.card::before{
+    content: "";
+    position: absolute;
+    top: -880px;
+    left: 50%;
+    translate: -50% 0;
+    width: 1000px;
+    height: 1000px;
+    border-radius: 50%;
+    background: #000;
+
+}
+
+@media (width >= 500px) {
+    .card {margin: 0; width: 360px;}
+}
+
+.card .logo {
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    translate: -50% 0;
+    /* width: 64px;
+    height: 64px; */
+}
+
+.card > h2 {
+    font-size: 22px;
+    font-weight: 300;
+    margin: 0 0 30px;
+    color: #2a3444;
+}
+
+.card > footer { color: #a1a1a1; }
+
+.card > footer > a { color: #47d447;}
+
+.form{
+    display: grid;
+    gap: 16px;
+    margin: 0 0 36px;
+}
+
+.form > input, .form > button {
+    width: 100%;
+    height: 56px;
+    border-radius: 28px;
+}
+
+.form > input {
+    border: 2px solid #b9b9b9;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 0 24px;
+    color: #11274c;
+    outline: 0;
+    
+}
+
+.lnr-eye {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.form > input::placeholder {
+    color: #cac8c8;
+}
+
+.form > button {
+    cursor: pointer;
+    width: 100%;
+    height: 56px;
+    padding: 0 16px;
+    background: #47d447;
+    color: #f9f9f9;
+    border: 0;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 2px;
+    transition: all 0.375s;
+    border-radius: 20px;
+}
+
+.form > button:hover{
+    background-color: #2a3444;
+    color: #fff;
+}
+
+
+a{
+    text-decoration: none;
+    color: #000;
+}
